@@ -154,7 +154,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="29dp"
             android:layout_marginBottom="104dp"
-            android:backgroundTint="@color/primary"
+            android:backgroundTint="@color/primary_color"
             android:text="@string/daftar" />
 
         <CheckBox
