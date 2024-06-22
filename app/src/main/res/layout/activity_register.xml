@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="321dp"
+        android:layout_marginBottom="412dp"
+        android:background="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/frame_3"
+        android:layout_width="310dp"
+        android:layout_height="675dp"
+        android:background="@drawable/bagtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/card_register"
+            android:layout_width="132dp"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="84dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-9sp"
+            android:text="@string/register"
+            android:textAppearance="@style/header" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:layout_below="@id/card_register"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-7dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-5sp"
+            android:text="@string/nama_tag"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="554dp"
+            android:drawableLeft="@drawable/rounded_account_circle_24"
+            android:hint="Nama"
+            android:minHeight="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="50dp"
+            android:layout_height="19dp"
+            android:layout_below="@id/card_register"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-5sp"
+            android:text="@string/email_tag"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_telepon"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="378dp"
+            android:drawableLeft="@drawable/baseline_phone_24"
+            android:hint="Telepon"
+            android:minHeight="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/card_register"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="261dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-5sp"
+            android:text="@string/password_tag"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="285dp"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:hint="Password"
+            android:minHeight="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_confirmpassword"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="201dp"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:hint="Password"
+            android:minHeight="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/confirm_password"
+            android:layout_width="200dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/card_register"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="344dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-5sp"
+            android:text="@string/confirm_password_tag"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/daftar"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="104dp"
+            android:backgroundTint="@color/primary"
+            android:text="@string/daftar" />
+
+        <CheckBox
+            android:id="@+id/confirm"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="154dp"
+            android:text="@string/setuju" />
+
+        <TextView
+            android:id="@+id/atau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="139dp"
+            android:layout_marginBottom="81dp"
+            android:text="atau" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/daftar_google"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="29dp"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/google"
+            android:text="@string/google"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/telepon"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/card_register"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="166dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-5sp"
+            android:text="@string/telepon_tag"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_email"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="472dp"
+            android:drawableLeft="@drawable/baseline_mail_outline_24"
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/sudah_punya_akun"
+            android:textColor="#DBBC5E" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
