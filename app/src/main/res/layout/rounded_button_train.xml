@@ -5,9 +5,9 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/rounded_button_rectangle"
+    android:background="@drawable/rounded_button_background"
     android:padding="16dp"
-    android:layout_margin="8dp">
+    android:layout_margin="16dp">
 
     <ImageView
         android:id="@+id/button_icon"

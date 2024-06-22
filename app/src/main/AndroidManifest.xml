@@ -16,9 +16,6 @@
             android:name=".DetailPenjualan"
             android:exported="false" />
         <activity
-            android:name=".DetailInventaris"
-            android:exported="false" />
-        <activity
             android:name=".InventarisView"
             android:exported="false" />
         <activity

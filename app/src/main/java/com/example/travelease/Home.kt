@@ -5,55 +5,68 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.RelativeLayout
+import android.widget.TextView
+import com.example.travelease.databinding.FragmentHomeBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Home.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Home : Fragment() {
 
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private var _binding : FragmentHomeBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Home.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Home().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        setupButton(binding.keretaButton.root, R.drawable.ic_train, "Kereta")
+        setupButton(binding.pesawatButton.root, R.drawable.ic_plane, "Pesawat")
+
+        setupTujuanPopuler()
+    }
+
+    private fun setupButton(button: View, iconResId: Int, label: String) {
+        val buttonIcon = button.findViewById<ImageView>(R.id.button_icon)
+        val buttonLabel = button.findViewById<TextView>(R.id.button_label)
+        buttonIcon.setImageResource(iconResId)
+        buttonLabel.text = label
+    }
+
+    private fun setupTujuanPopuler() {
+        val cardContainer = binding.tujuanPopulerContainer
+
+        val card1 = layoutInflater.inflate(R.layout.item_tujuan_populer, cardContainer, false)
+        setCardBackground(card1, R.drawable.Jakarta)
+        card1.findViewById<TextView>(R.id.card_text).text = "Jakarta"
+        cardContainer.addView(card1)
+
+        val card2 = layoutInflater.inflate(R.layout.item_tujuan_populer, cardContainer, false)
+        setCardBackground(card2, R.drawable.Surabaya)
+        card2.findViewById<TextView>(R.id.card_text).text = "Surabaya"
+        cardContainer.addView(card2)
+
+        val card3 = layoutInflater.inflate(R.layout.item_tujuan_populer, cardContainer, false)
+        setCardBackground(card3, R.drawable.Yogyakarta)
+        card3.findViewById<TextView>(R.id.card_text).text = "Yogyakarta"
+        cardContainer.addView(card3)
+
+        // Add more cards as needed
+    }
+
+    private fun setCardBackground(card: View, backgroundResId: Int) {
+        val cardBackground = card.findViewById<RelativeLayout>(R.id.card_container)
+        cardBackground.setBackgroundResource(backgroundResId)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

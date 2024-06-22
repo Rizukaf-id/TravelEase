@@ -2,8 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFF5E1">
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/background_color"/>
 
     <!-- Toolbar or ActionBar can be here if needed -->
 
@@ -42,11 +46,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginBottom="24dp">
+                android:background="@drawable/rounded_corners"
+                android:layout_marginBottom="24dp"
+                android:elevation="8dp">
 
                 <include
                     layout="@layout/rounded_button_train"
-                    android:id="@+id/kereta_button"/>
+                    android:id="@+id/kereta_button" />
+
 
                 <include
                     layout="@layout/rounded_button_plane"
@@ -70,6 +77,7 @@
                 android:scrollbars="none">
 
                 <LinearLayout
+                    android:id="@+id/tujuan_populer_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -102,18 +110,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <View
-                        android:layout_width="120dp"
-                        android:layout_height="80dp"
-                        android:background="@android:color/darker_gray"
-                        android:layout_marginEnd="8dp"/>
-
-                    <View
-                        android:layout_width="120dp"
-                        android:layout_height="80dp"
-                        android:background="@android:color/darker_gray"
-                        android:layout_marginEnd="8dp"/>
-
+                    <include layout="@layout/item_promo"/>
+                    <include layout="@layout/item_promo"/>
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -138,17 +136,8 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <View
-                        android:layout_width="120dp"
-                        android:layout_height="80dp"
-                        android:background="@android:color/darker_gray"
-                        android:layout_marginEnd="8dp"/>
-
-                    <View
-                        android:layout_width="120dp"
-                        android:layout_height="80dp"
-                        android:background="@android:color/darker_gray"
-                        android:layout_marginEnd="8dp"/>
+                    <include layout="@layout/item_berita_terkini"/>
+                    <include layout="@layout/item_berita_terkini"/>
 
                 </LinearLayout>
             </HorizontalScrollView>
