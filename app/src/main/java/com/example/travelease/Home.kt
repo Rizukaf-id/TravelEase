@@ -43,17 +43,17 @@ override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val cardContainer = binding.tujuanPopulerContainer
 
         val card1 = layoutInflater.inflate(R.layout.item_tujuan_populer, cardContainer, false)
-        setCardBackground(card1, R.drawable.Jakarta)
+        setCardBackground(card1, R.drawable.jakarta)
         card1.findViewById<TextView>(R.id.card_text).text = "Jakarta"
         cardContainer.addView(card1)
 
         val card2 = layoutInflater.inflate(R.layout.item_tujuan_populer, cardContainer, false)
-        setCardBackground(card2, R.drawable.Surabaya)
+        setCardBackground(card2, R.drawable.surabaya)
         card2.findViewById<TextView>(R.id.card_text).text = "Surabaya"
         cardContainer.addView(card2)
 
         val card3 = layoutInflater.inflate(R.layout.item_tujuan_populer, cardContainer, false)
-        setCardBackground(card3, R.drawable.Yogyakarta)
+        setCardBackground(card3, R.drawable.yogyakarta)
         card3.findViewById<TextView>(R.id.card_text).text = "Yogyakarta"
         cardContainer.addView(card3)
 
