@@ -3,6 +3,7 @@ package com.example.travelease
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
+import android.view.LayoutInflater
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
@@ -13,27 +14,43 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.travelease.databinding.ActivityPenumpangTersimpanBinding
 
 class PenumpangTersimpan : AppCompatActivity() {
+
+    private lateinit var binding: ActivityPenumpangTersimpanBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_penumpang_tersimpan)
+        binding = ActivityPenumpangTersimpanBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        supportActionBar?.apply {
-            setDisplayShowTitleEnabled(false) // Disable default title
-            setDisplayHomeAsUpEnabled(true)
-            setDisplayShowHomeEnabled(true)
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressed()
         }
 
-        val toolbarTitle: TextView = findViewById(R.id.toolbar_title)
-        toolbarTitle.text = "Penumpang Tersimpan"
-        toolbarTitle.gravity = Gravity.CENTER
+        // Define your list of passengers
+        val penumpangList = listOf(
+            Penumpang("Dewasa", "Joko Anwar"),
+            Penumpang("Anak-Anak", "Joko Jr")
+            // Add more passengers as needed
+        )
 
-        toolbar.setNavigationOnClickListener {
-            onBackPressed()
+        // Inflate and add each passenger view to the LinearLayout
+        for (penumpang in penumpangList) {
+            val passengerView = LayoutInflater.from(this).inflate(R.layout.item_penumpang, null)
+
+            val passengerTypeTextView: TextView = passengerView.findViewById(R.id.passenger_type)
+            val passengerNameTextView: TextView = passengerView.findViewById(R.id.passenger_name)
+
+            passengerTypeTextView.text = penumpang.type
+            passengerNameTextView.text = penumpang.name
+
+            // Add the view to the LinearLayout
+            binding.linearLayout.addView(passengerView)
         }
     }
 
