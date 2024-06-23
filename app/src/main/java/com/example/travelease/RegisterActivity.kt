@@ -65,6 +65,7 @@ class RegisterActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.daftar.setOnClickListener {
+            val username = binding.nama.text.toString()
             val email = binding.inputEmail.text.toString()
             val password = binding.inputConfirmpassword.text.toString()
             val confirmPassword = binding.inputConfirmpassword.text.toString()
@@ -76,6 +77,7 @@ class RegisterActivity : AppCompatActivity() {
                         if (it.isSuccessful){
                             val db = Firebase.firestore
                             val user = hashMapOf(
+                                "username" to username,
                                 "email" to email,
                             )
 
