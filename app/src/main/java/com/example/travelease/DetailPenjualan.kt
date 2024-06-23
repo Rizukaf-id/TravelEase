@@ -6,6 +6,7 @@ import android.view.Gravity
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -26,6 +27,7 @@ class DetailPenjualan : AppCompatActivity() {
         val autoCompleteTahun : AutoCompleteTextView = findViewById(R.id.auto_complete_tahun)
         val adapterBulan = ArrayAdapter(this, R.layout.list_item, itemsBulan)
         val adapterTahun = ArrayAdapter(this, R.layout.list_item, itemsTahun)
+        val button: Button = findViewById(R.id.button)
 
         autoCompleteBulan.setAdapter(adapterBulan)
 
@@ -45,7 +47,10 @@ class DetailPenjualan : AppCompatActivity() {
             Toast.makeText(this, "Item : $selectedItem", Toast.LENGTH_SHORT).show()
         }
 
-        // Set the title with center alignment, 24dp size, and bold
+        val onItemSelectedListener = AdapterView.OnItemClickListener { _, _, _, _ ->
+            button.isEnabled = true
+        }
+
         supportActionBar?.apply {
             setDisplayShowTitleEnabled(false) // Disable default title
             setDisplayHomeAsUpEnabled(true)
