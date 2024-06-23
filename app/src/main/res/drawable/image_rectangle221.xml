@@ -1,0 +1,9 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:gravity="bottom">
+<shape>
+  <size android:height="1dp" />
+  <solid android:color="#FFBFBCB9" />
+</shape>
+</item>
+</layer-list>

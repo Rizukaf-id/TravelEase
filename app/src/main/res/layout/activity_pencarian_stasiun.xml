@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="800dp"
+    android:background="@drawable/drawable_shape132">
+
+    <FrameLayout
+        android:id="@+id/container_frame"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_gravity="top|right"
+        android:background="@drawable/container_frame130">
+
+        <FrameLayout
+            android:id="@+id/container_frame1"
+            android:layout_width="261dp"
+            android:layout_height="34dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/container_frame131">
+
+
+
+            <TextView
+                android:id="@+id/text_cari_stasiun_kota"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-1dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Cari Stasiun Atau Kota"
+                android:textColor="#FFCBC5C5"
+                android:textSize="10dp"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/image_search_line"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_search_line149" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/image_union"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginRight="317dp"
+            android:layout_marginBottom="28dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_union136" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/container_frame"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/item_pencarian_stasiun" />
+            <include layout="@layout/item_pencarian_stasiun" />
+            <include layout="@layout/item_pencarian_stasiun" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
