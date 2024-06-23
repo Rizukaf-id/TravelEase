@@ -53,6 +53,7 @@
 
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,6 +62,38 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/daftarPenumpangButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/baseline_groups_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="120dp"
+                android:text="Daftar Penumpang"
+                android:textColor="@color/primary_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/primary_color" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"

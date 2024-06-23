@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+//import androidx.navigation.fragment.findNavController
 import com.example.travelease.databinding.FragmentHomeBinding
 
 class Home : Fragment() {
@@ -20,10 +22,16 @@ class Home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+//        val keretaButton: Button = view.findViewById(R.id.kereta_button)
+//        keretaButton.setOnClickListener {
+//            findNavController().navigate(R.id.action_homeFragment_to_pemesananKeretaLokal)
+//        }
         return binding.root
     }
 
-override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         setupButton(binding.keretaButton.root, R.drawable.ic_train, "Kereta")

@@ -15,28 +15,28 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        replaceFragment(Home())
+        // Initial fragment setup
+        if (intent.getBooleanExtra("navigateToProfile", false)) {
+            replaceFragment(Profile())
+        } else {
+            replaceFragment(Home())
+        }
 
-        binding.bottomNavigationView.setOnItemSelectedListener {
-            when(it.itemId) {
+        // Bottom navigation item selection listener
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when(item.itemId) {
                 R.id.home -> replaceFragment(Home())
                 R.id.ticket -> replaceFragment(Ticket())
                 R.id.profile -> replaceFragment(Profile())
-
-                else -> {
-
-                }
+                else -> {}
             }
             true
-
         }
     }
 
     private fun replaceFragment(fragment: Fragment) {
-
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frame_layout, fragment)
-        fragmentTransaction.commit()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.frame_layout, fragment)
+            .commit()
     }
 }

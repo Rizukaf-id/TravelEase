@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.travelease.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+
+        <!-- Define your actions -->
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_pemesananKeretaLokal"-->
+<!--            app:destination="@id/pemesananKeretaLokal" />-->
+    </fragment>
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/pemesananKeretaLokal"-->
+<!--        android:name="com.example.travelease.PemesananKeretaLokal"-->
+<!--        android:label="fragment_pemesanan_kereta_lokal"-->
+<!--        tools:layout="@layout/fragment_pemesanan_kereta_lokal" />-->
+
+
+</navigation>

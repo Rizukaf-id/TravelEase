@@ -40,8 +40,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/item_penumpang" />
-
         </LinearLayout>
     </ScrollView>
 
