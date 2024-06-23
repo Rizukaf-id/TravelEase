@@ -24,6 +24,7 @@ class Home : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
+
 //        val keretaButton: Button = view.findViewById(R.id.kereta_button)
 //        keretaButton.setOnClickListener {
 //            findNavController().navigate(R.id.action_homeFragment_to_pemesananKeretaLokal)

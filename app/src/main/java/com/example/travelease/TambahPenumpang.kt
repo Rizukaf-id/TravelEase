@@ -17,7 +17,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.travelease.databinding.ActivityPenumpangTersimpanBinding
 
-class PenumpangTersimpan : AppCompatActivity() {
+class TambahPenumpang : AppCompatActivity() {
 
     private lateinit var binding: ActivityPenumpangTersimpanBinding
     override fun onCreate(savedInstanceState: Bundle?) {

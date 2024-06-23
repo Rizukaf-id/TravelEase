@@ -98,7 +98,7 @@ class DetailPenumpang : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val intent = Intent(this, InventarisView::class.java)
+        val intent = Intent(this, PenumpangTersimpan::class.java)
         startActivity(intent)
         super.onBackPressed()
     }
