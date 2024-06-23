@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "647526141837-b71bt4jksifvtntqrdssgt3te0motg2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travelease",
+            "certificate_hash": "3243a073d08ed785c9c2fde3d7f9fc57d7b045b1"
+          }
+        },
+        {
           "client_id": "647526141837-inv5n3dtp2tb9v7qmso9558l04skk7gf.apps.googleusercontent.com",
           "client_type": 3
         }
