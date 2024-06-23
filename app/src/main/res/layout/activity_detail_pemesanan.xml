@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_detail_pemesanan"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="@drawable/container_detail_pemesanan">
+
+    <ImageView
+        android:id="@+id/ic_heart_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="284dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_heart_image" />
+
+    <FrameLayout
+        android:id="@+id/container_frame7"
+        android:layout_width="360dp"
+        android:layout_height="262dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/container_frame7">
+
+        <FrameLayout
+            android:id="@+id/container_status_bar"
+            android:layout_width="360dp"
+            android:layout_height="43dp"
+            android:layout_gravity="top|left">
+
+            <ImageView
+                android:id="@+id/image_bg"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/image_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/image_time"
+                android:layout_width="54dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="290dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_time" />
+
+            <ImageView
+                android:id="@+id/image_alarm"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="242dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_alarm" />
+
+            <ImageView
+                android:id="@+id/image_signal"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="305dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_signal" />
+
+            <ImageView
+                android:id="@+id/image_wifi"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="284dp"
+                android:layout_marginRight="58dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_wifi" />
+
+            <ImageView
+                android:id="@+id/image_bluetooth"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="263dp"
+                android:layout_marginRight="79dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_bluetooth" />
+
+            <ImageView
+                android:id="@+id/image_battery"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="326dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_battery" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_detail_pemesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="119dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Detail Pemesanan"
+            android:textColor="#FF000000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/image_union"
+            android:layout_width="20dp"
+            android:layout_height="16.84dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="317dp"
+            android:layout_marginTop="43.59dp"
+            android:layout_marginBottom="201.57dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_union" />
+
+        <FrameLayout
+            android:id="@+id/container_group4"
+            android:layout_width="318dp"
+            android:layout_height="139dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="41dp"
+            android:layout_gravity="bottom|right">
+
+            <ImageView
+                android:id="@+id/image_rectangle8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_rectangle8"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/text_lihat_kelas"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginLeft="232dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="17dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Lihat Kelas"
+                android:textColor="#FF000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/text_time_38"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="100.5dp"
+                android:layout_marginBottom="27.5dp"
+                android:layout_gravity="left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="21.38"
+                android:textColor="#FF000000"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/text_j_m"
+                android:layout_width="wrap_content"
+                android:layout_height="9dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="79dp"
+                android:layout_marginBottom="51dp"
+                android:layout_gravity="left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="02j 17m"
+                android:textColor="#FFB8B6B6"
+                android:textSize="6dp" />
+
+            <TextView
+                android:id="@+id/text_jombang"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="56.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="JOMBANG (JG)"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/text_solo_balapan"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="101dp"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="9.6dp"
+                android:text="SOLO BALAPAN\n(SLO)"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/text_time_21"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="56.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="19:21"
+                android:textColor="#FF000000"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:id="@+id/image_path"
+                android:layout_width="9dp"
+                android:layout_height="11.36dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="281dp"
+                android:layout_marginTop="108.26dp"
+                android:layout_marginBottom="19.38dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_path" />
+
+            <TextView
+                android:id="@+id/text_pax"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginLeft="279dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="41.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="/pax"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/text_rp1"
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginRight="42dp"
+                android:layout_marginTop="38.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Rp 135.000"
+                android:textColor="#FF000000"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/text_harga_mulai_dari"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginLeft="197dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Harga tersedia mulai dari"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/text_dots"
+                android:layout_width="11dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="74dp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="7.2dp"
+                android:text="............"
+                android:textColor="#FFB8B6B6"
+                android:textSize="6dp" />
+
+            <TextView
+                android:id="@+id/text_mutiara_selatan"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="MUTIARA SELATAN (85)"
+                android:textColor="#FFDCBD5E"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/image_train3"
+                android:layout_width="14dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_train3" />
+
+            <ImageView
+                android:id="@+id/image_group"
+                android:layout_width="9dp"
+                android:layout_height="6.24dp"
+                android:layout_marginLeft="297dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="113dp"
+                android:layout_marginBottom="19.76dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_group" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/img_arrow_left_normal"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="61dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_arrow_left_normal" />
+
+    <ImageView
+        android:id="@+id/img_solar_arrow_up_linear"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="259dp"
+        android:layout_marginTop="252dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/text_penumpang_tersimpan"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="center_horizontal|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Penumpang Tersimpan"
+        android:textColor="#FF000000"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/text_detail_penumpang"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="center_horizontal|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Detail Penumpang"
+        android:textColor="#FF000000"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/text_tambah_penumpang"
+        android:layout_width="wrap_content"
+        android:layout_height="13dp"
+        android:layout_marginLeft="243dp"
+        android:layout_marginTop="406dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="center_horizontal|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="+Tambah Penumpang"
+        android:textColor="#FFDCBD5E"
+        android:textSize="9dp" />
+
+    <FrameLayout
+        android:id="@+id/container_frame3"
+        android:layout_width="319dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="321dp"
+        android:layout_gravity="top|left">
+
+        <LinearLayout
+            android:id="@+id/container_frame4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/container_group1"
+                android:layout_width="220dp"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/image_rectangle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_rectangle"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/image_train"
+                    android:layout_width="7.35dp"
+                    android:layout_height="6.42dp"
+                    android:layout_marginLeft="13.13dp"
+                    android:layout_marginTop="13.15dp"
+                    android:layout_gravity="top|left"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/text_joko_anwar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_gravity="top|left"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Joko Anwar"
+                    android:textColor="#FF000000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/text_joko_anwar_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="29.5dp"
+                    android:layout_marginBottom="14.5dp"
+                    android:layout_gravity="left"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="jokoanwar@gmail.com"
+                    android:textColor="#FFB8B6B6"
+                    android:textSize="8dp" />
+
+                <ImageView
+                    android:id="@+id/image_rectangle1"
+                    android:layout_width="60dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="153dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/image_rectangle1"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/text_gunakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Gunakan"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="6dp" />
+
+                <TextView
+                    android:id="@+id/text_gunakan1"
+                    android:layout_width="80dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="top|left"
+                    android:gravity="left|top"
+                    android:includeFontPadding="false"
+                    android:lineHeight="4.8dp"
+                    android:text="Gunakan"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="4dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/container_group3"
+                android:layout_width="220dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/image_rectangle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_rectangle2"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/image_train1"
+                    android:layout_width="7.35dp"
+                    android:layout_height="6.42dp"
+                    android:layout_marginLeft="13.13dp"
+                    android:layout_marginTop="13.15dp"
+                    android:layout_gravity="top|left"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/text_anita_sari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_gravity="top|left"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Anita Sari"
+                    android:textColor="#FF000000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/text_anita_sari_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="29.5dp"
+                    android:layout_marginBottom="14.5dp"
+                    android:layout_gravity="left"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="anitasari@gmail.com"
+                    android:textColor="#FFB8B6B6"
+                    android:textSize="8dp" />
+
+                <ImageView
+                    android:id="@+id/image_rectangle3"
+                    android:layout_width="60dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="153dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="17dp"
+                    android:background="@drawable/image_rectangle3"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/text_gunakan2"
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Gunakan"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="6dp" />
+
+                <TextView
+                    android:id="@+id/text_gunakan3"
+                    android:layout_width="80dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_gravity="top|left"
+                    android:gravity="left|top"
+                    android:includeFontPadding="false"
+                    android:lineHeight="4.8dp"
+                    android:text="Gunakan"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="4dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ic_users_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="402dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_users_image" />
+
+    <FrameLayout
+        android:id="@+id/container_frame5"
+        android:layout_width="320dp"
+        android:layout_height="257dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="442dp"
+        android:layout_gravity="top|left">
+
+        <ImageView
+            android:id="@+id/image_rectangle4"
+            android:layout_width="318dp"
+            android:layout_height="252dp"
+            android:layout_marginLeft="2dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/image_rectangle4"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/text_penumpang_info"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="217dp"
+            android:layout_gravity="top|left"
+            android:alpha="0.7799999713897705"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="9.6dp"
+            android:text="Penumpang bayi tidak mendapat kursi sendiri. Penumpang\ndibawah 18 tahun dapat mengisi dengan nomor tanda pengenal"
+            android:textColor="#FFA6A6A6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/text_nama_lengkap"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="164.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Nama Lengkap"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/image_rectangle5"
+            android:layout_width="286dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="179dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/image_rectangle5"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/text_joko_anwar1"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:alpha="0.7799999713897705"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Joko Anwar"
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_nomor_identitas"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="104.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Nomor Identitas ( NIK )"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/image_rectangle6"
+            android:layout_width="155dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="119dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/image_rectangle6"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/text_xxx"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginLeft="159dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:alpha="0.7799999713897705"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="3578912345XXX"
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/image_train2"
+            android:layout_width="14dp"
+            android:layout_height="30.86dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="132.58dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/text_jenis_identitas"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="104.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Jenis Identitas"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <FrameLayout
+            android:id="@+id/container_frame6"
+            android:layout_width="272dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="top|left">
+
+            <ImageView
+                android:id="@+id/image_frame"
+                android:layout_width="42dp"
+                android:layout_height="39dp"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_frame" />
+
+            <TextView
+                android:id="@+id/text_penumpang"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_gravity="top|left"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Penumpang 1"
+                android:textColor="#FF000000"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/image_vector"
+                android:layout_width="9dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="263dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_vector" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/image_rectangle7"
+            android:layout_width="318dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="26dp"
+            android:layout_gravity="top|left"
+            android:background="@drawable/image_rectangle7"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/image_frame1"
+            android:layout_width="68dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="119dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_frame1" />
+
+        <TextView
+            android:id="@+id/text_ktp"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="KTP"
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/container_frame1"
+        android:layout_width="360dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="721dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/container_frame1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp"
+        android:paddingTop="14dp">
+
+        <LinearLayout
+            android:id="@+id/container_frame2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:clipToPadding="false"
+            android:gravity="left|top"
+            android:orientation="vertical"
+            android:paddingBottom="0.5dp"
+            android:paddingTop="0.5dp">
+
+            <TextView
+                android:id="@+id/text_total"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:layout_marginTop="-0.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Total"
+                android:textColor="#FF000000"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/text_rp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="4.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Rp 000000;"
+                android:textColor="#FFDCBD5E"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_button_component"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:background="@drawable/container_button_component"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="7.5dp"
+            android:paddingTop="7.5dp">
+
+            <TextView
+                android:id="@+id/text_bayar"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Bayar"
+                android:textColor="#FFFDFCFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

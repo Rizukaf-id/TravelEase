@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_metode_pembayaran"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="@drawable/container_metode_pembayaran"
+    android:gravity="left|top"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container_frame3"
+        android:layout_width="360dp"
+        android:layout_height="103dp"
+        android:layout_gravity="left"
+        android:background="@drawable/container_frame4">
+
+        <FrameLayout
+            android:id="@+id/container_status_bar"
+            android:layout_width="360dp"
+            android:layout_height="43dp"
+            android:layout_gravity="top|left">
+
+            <ImageView
+                android:id="@+id/image_status_bg"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/image_status_bg"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/image_status_time"
+                android:layout_width="54dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="290dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_status_time" />
+
+            <ImageView
+                android:id="@+id/image_status_alarm"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="242dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_status_alarm" />
+
+            <ImageView
+                android:id="@+id/image_status_signal"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="305dp"
+                android:layout_marginRight="37dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_status_signal" />
+
+            <ImageView
+                android:id="@+id/image_status_wifi"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="284dp"
+                android:layout_marginRight="58dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_status_wifi" />
+
+            <ImageView
+                android:id="@+id/image_status_bluetooth"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="263dp"
+                android:layout_marginRight="79dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_status_bluetooth" />
+
+            <ImageView
+                android:id="@+id/image_status_battery"
+                android:layout_width="18dp"
+                android:layout_height="18.48dp"
+                android:layout_marginLeft="326dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12.32dp"
+                android:layout_marginBottom="12.21dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/image_status_battery" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_marginTop="55.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Metode Pembayaran"
+            android:textColor="#FF000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/image_icon_left"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="316dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="23dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_icon_left2" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/container_frame1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/container_frame3"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/image_b_c_a"
+            android:layout_width="100.23dp"
+            android:layout_height="71.46dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_b_c_a" />
+
+        <TextView
+            android:id="@+id/text_m_banking_b_c_a"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="19dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="M - Banking BCA"
+            android:textColor="#FFDCBD5E"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_frame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/container_frame3"
+        android:clipToPadding="false"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/image_e_wallet_go_pay"
+            android:layout_width="100.23dp"
+            android:layout_height="71.46dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_e_wallet_go_pay" />
+
+        <TextView
+            android:id="@+id/text_e_wallet_go_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="19dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="E - Wallet GoPay"
+            android:textColor="#FFDCBD5E"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>
