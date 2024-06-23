@@ -10,17 +10,17 @@
         tools:layout="@layout/fragment_home">
 
         <!-- Define your actions -->
-        <action
-            android:id="@+id/action_homeFragment_to_pemesananKeretaLokal"
-            app:destination="@id/pemesananKeretaLokal" />
-
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_pemesananKeretaLokal"-->
+<!--            app:destination="@id/pemesananKeretaLokal" />-->
     </fragment>
 
-    <fragment
-        android:id="@+id/pemesananKeretaLokal"
-        android:name="com.example.travelease.PemesananKeretaLokal"
-        android:label="fragment_pemesanan_kereta_lokal"
-        tools:layout="@layout/fragment_pemesanan_kereta_lokal" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/pemesananKeretaLokal"-->
+<!--        android:name="com.example.travelease.PemesananKeretaLokal"-->
+<!--        android:label="fragment_pemesanan_kereta_lokal"-->
+<!--        tools:layout="@layout/fragment_pemesanan_kereta_lokal" />-->
 
 
 </navigation>

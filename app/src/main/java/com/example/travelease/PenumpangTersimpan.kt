@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -36,7 +37,6 @@ class PenumpangTersimpan : AppCompatActivity() {
         val penumpangList = listOf(
             Penumpang("Dewasa", "Joko Anwar"),
             Penumpang("Anak-Anak", "Joko Jr")
-            // Add more passengers as needed
         )
 
         // Inflate and add each passenger view to the LinearLayout
@@ -48,6 +48,14 @@ class PenumpangTersimpan : AppCompatActivity() {
 
             passengerTypeTextView.text = penumpang.type
             passengerNameTextView.text = penumpang.name
+
+            val layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+            val margin = resources.getDimensionPixelSize(R.dimen.item_penumpang_margin_bottom)
+            layoutParams.setMargins(0, 0, 0, margin)
+            passengerView.layoutParams = layoutParams
 
             // Add the view to the LinearLayout
             binding.linearLayout.addView(passengerView)
@@ -61,6 +69,7 @@ class PenumpangTersimpan : AppCompatActivity() {
 
     override fun onBackPressed() {
         val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("navigateToProfile", true)
         startActivity(intent)
         super.onBackPressed()
     }

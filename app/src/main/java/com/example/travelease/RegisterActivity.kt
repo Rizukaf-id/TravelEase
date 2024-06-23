@@ -39,8 +39,9 @@ class RegisterActivity : AppCompatActivity() {
             val email = binding.inputEmail.text.toString()
             val password = binding.inputConfirmpassword.text.toString()
             val confirmPassword = binding.inputConfirmpassword.text.toString()
+            val confirmbutton = binding.confirm
 
-            if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+            if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty() && confirmbutton.isChecked) {
                 if (password == confirmPassword){
                     auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
                         if (it.isSuccessful){

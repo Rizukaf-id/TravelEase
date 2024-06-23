@@ -19,10 +19,18 @@ class Profile : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        view.findViewById<LinearLayout>(R.id.daftarPenumpangButton).setOnClickListener {
+            navigateToPenumpangTersimpan()
+        }
         // Set OnClickListener for logout
         view.findViewById<LinearLayout>(R.id.logoutButton).setOnClickListener {
             logoutUser()
         }
+    }
+
+    private fun navigateToPenumpangTersimpan() {
+        val intent = Intent(activity, PenumpangTersimpan::class.java)
+        startActivity(intent)
     }
 
     private fun logoutUser() {

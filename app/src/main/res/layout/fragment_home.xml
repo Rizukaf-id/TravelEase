@@ -81,11 +81,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
-                    <include layout="@layout/item_tujuan_populer"/>
-                    <include layout="@layout/item_tujuan_populer"/>
-                    <include layout="@layout/item_tujuan_populer"/>
-
                 </LinearLayout>
             </HorizontalScrollView>
 

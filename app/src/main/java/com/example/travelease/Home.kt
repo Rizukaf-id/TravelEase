@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.navigation.fragment.findNavController
+//import androidx.navigation.fragment.findNavController
 import com.example.travelease.databinding.FragmentHomeBinding
 
 class Home : Fragment() {
@@ -24,10 +24,10 @@ class Home : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val keretaButton: Button = view.findViewById(R.id.kereta_button)
-        keretaButton.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_pemesananKeretaLokal)
-        }
+//        val keretaButton: Button = view.findViewById(R.id.kereta_button)
+//        keretaButton.setOnClickListener {
+//            findNavController().navigate(R.id.action_homeFragment_to_pemesananKeretaLokal)
+//        }
         return binding.root
     }
 
