@@ -3,6 +3,7 @@ package com.example.travelease
 import android.app.Application
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -32,25 +33,30 @@ class RegisterActivity : AppCompatActivity() {
         }
 
 
+        auth = FirebaseAuth.getInstance()
+
         binding.daftar.setOnClickListener {
             val email = binding.inputEmail.text.toString()
             val password = binding.inputConfirmpassword.text.toString()
+            val confirmPassword = binding.inputConfirmpassword.text.toString()
 
-            if (email.isNotEmpty() && password.isNotEmpty()) {
-                auth.createUserWithEmailAndPassword(email, password)
-                    .addOnCompleteListener(this) { task ->
-                        if (task.isSuccessful) {
-                            // Sign in success, update UI with the signed-in user's information
-                            val user = auth.currentUser
-                            // Navigate to the next page or show a success message
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            // You can use a Toast or a Snackbar to show the error message
+            if (email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+                if (password == confirmPassword){
+                    auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
+                        if (it.isSuccessful){
+                            Toast.makeText(this, "Register Berhasil", Toast.LENGTH_SHORT).show()
+                            val intent = Intent(this, LoginActivity::class.java)
+                            startActivity(intent)
+                        }
+                        else {
+                            Toast.makeText(this, it.result.toString(), Toast.LENGTH_SHORT).show()
                         }
                     }
-            } else {
-                // Show a message that the email or password field is empty
-                // You can use a Toast or a Snackbar for this
+                }else{
+                    Toast.makeText(this, "Password dan Confirm Password tidak sama", Toast.LENGTH_SHORT).show()
+                }
+            }  else{
+                Toast.makeText(this, "Email dan Password tidak boleh kosong", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -62,17 +68,5 @@ class RegisterActivity : AppCompatActivity() {
     private fun login(){
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
-    }
-    public override fun onStart() {
-        super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = auth.currentUser
-        if (currentUser != null) {
-            reload()
-        }
-    }
-
-    private fun reload() {
-        TODO("Not yet implemented")
     }
 }

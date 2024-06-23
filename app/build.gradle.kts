@@ -2,7 +2,7 @@ plugins {
 //    alias(libs.plugins.androidApplication)
     id("com.android.application")
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    id("com.google.gms.google-services") version "4.4.2" apply false
+    id("com.google.gms.google-services") version "4.4.2" apply true
 }
 
 android {
