@@ -25,6 +25,11 @@ class PenumpangTersimpan : AppCompatActivity() {
         binding = ActivityPenumpangTersimpanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.linearLayout.setOnClickListener {
+            val intent = Intent(this, DetailPenumpang::class.java)
+            startActivity(intent)
+        }
+
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(false)
