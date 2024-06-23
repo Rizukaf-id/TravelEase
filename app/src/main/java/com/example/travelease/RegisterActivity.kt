@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthCredential
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 
@@ -29,6 +30,7 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FirebaseApp.initializeApp(this)
@@ -72,6 +74,19 @@ class RegisterActivity : AppCompatActivity() {
                 if (password == confirmPassword){
                     auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{
                         if (it.isSuccessful){
+                            val db = Firebase.firestore
+                            val user = hashMapOf(
+                                "email" to email,
+                            )
+
+                            db.collection("users")
+                                .add(user)
+                                .addOnSuccessListener { documentReference ->
+                                    Toast.makeText(this, "DocumentSnapshot added with ID: ${documentReference.id}", Toast.LENGTH_SHORT).show()
+                                }
+                                .addOnFailureListener { e ->
+                                    Toast.makeText(this, "Error adding document", Toast.LENGTH_SHORT).show()
+                                }
                             Toast.makeText(this, "Register Berhasil", Toast.LENGTH_SHORT).show()
                             val intent = Intent(this, LoginActivity::class.java)
                             startActivity(intent)
