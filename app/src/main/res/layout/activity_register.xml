@@ -80,15 +80,15 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_telepon"
+            android:id="@+id/input_password"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="11dp"
-            android:layout_marginBottom="378dp"
-            android:drawableLeft="@drawable/baseline_phone_24"
-            android:hint="Telepon"
+            android:layout_marginBottom="385dp"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:hint="Password"
             android:minHeight="48dp"
             android:paddingTop="8dp"
             android:paddingBottom="8dp" />
@@ -99,39 +99,11 @@
             android:layout_height="24dp"
             android:layout_below="@id/card_register"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="261dp"
+            android:layout_marginTop="161dp"
             android:gravity="top"
             android:lineSpacingExtra="-5sp"
             android:text="@string/password_tag"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_password"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="11dp"
-            android:layout_marginBottom="285dp"
-            android:drawableRight="@drawable/baseline_remove_red_eye_24"
-            android:hint="Password"
-            android:minHeight="48dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp" />
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/input_confirmpassword"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="201dp"
-            android:drawableRight="@drawable/baseline_remove_red_eye_24"
-            android:hint="Password"
-            android:minHeight="48dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/confirm_password"
@@ -139,7 +111,7 @@
             android:layout_height="24dp"
             android:layout_below="@id/card_register"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="344dp"
+            android:layout_marginTop="244dp"
             android:gravity="top"
             android:lineSpacingExtra="-5sp"
             android:text="@string/confirm_password_tag"
@@ -153,7 +125,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="29dp"
-            android:layout_marginBottom="104dp"
+            android:layout_marginBottom="204dp"
             android:backgroundTint="@color/primary_color"
             android:text="@string/daftar" />
 
@@ -162,7 +134,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="154dp"
+            android:layout_marginBottom="254dp"
             android:text="@string/setuju" />
 
         <TextView
@@ -171,8 +143,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="139dp"
-            android:layout_marginBottom="81dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="181dp"
             android:text="atau" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -183,7 +155,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="26dp"
-            android:layout_marginBottom="29dp"
+            android:layout_marginBottom="129dp"
             android:backgroundTint="@color/white"
             android:drawableLeft="@drawable/google"
             android:text="@string/google"
@@ -191,16 +163,29 @@
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/telepon"
-            android:layout_width="100dp"
-            android:layout_height="24dp"
-            android:layout_below="@id/card_register"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="166dp"
-            android:gravity="top"
-            android:lineSpacingExtra="-5sp"
-            android:text="@string/telepon_tag"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:id="@+id/textViewLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="106dp"
+            android:text="@string/sudah_punya_akun"
+            android:textColor="#DBBC5E" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_confirmpassword"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="301dp"
+            android:drawableRight="@drawable/baseline_remove_red_eye_24"
+            android:hint="Password"
+            android:minHeight="48dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_email"
@@ -215,17 +200,6 @@
             android:minHeight="48dp"
             android:paddingTop="8dp"
             android:paddingBottom="8dp" />
-
-        <TextView
-            android:id="@+id/textViewLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="66dp"
-            android:layout_marginBottom="6dp"
-            android:text="@string/sudah_punya_akun"
-            android:textColor="#DBBC5E" />
 
 
     </RelativeLayout>

@@ -13,10 +13,10 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FirebaseApp.initializeApp(this)
@@ -30,6 +30,7 @@ class RegisterActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
 
         binding.daftar.setOnClickListener {
             val email = binding.inputEmail.text.toString()
@@ -58,7 +59,11 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStart() {
+    private fun login(){
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+    public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
@@ -68,11 +73,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun reload() {
-        // Implement the reload function if needed
-    }
-
-    private fun login() {
-        val intent = Intent(this, LoginActivity::class.java)
-        startActivity(intent)
+        TODO("Not yet implemented")
     }
 }
