@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_pilih_kereta"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="@drawable/container_pilih_kereta205">
+
+    <FrameLayout
+        android:id="@+id/container_frame"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/container_frame200">
+
+        <TextView
+            android:id="@+id/text_kabupaten_jo"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="KABUPATEN JO... "
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_stasiun_gubeng"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="STASIUN GUBENG (..."
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="206dp"
+            android:layout_marginTop="82.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="."
+            android:textColor="#FFB8B6B6"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/text_dewasa"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="222dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="1 Dewasa"
+            android:textColor="#FFB8B6B6"
+            android:textSize="10dp" />
+
+        <FrameLayout
+            android:id="@+id/container_group"
+            android:layout_width="362dp"
+            android:layout_height="55dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="64dp">
+
+            <TextView
+                android:id="@+id/text_min_jun"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Min, 09 Jun 2024 "
+                android:textColor="#FFB8B6B6"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/image_rectangle"
+                android:layout_width="413dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_rectangle214"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/image_union"
+            android:layout_width="20dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginRight="317dp"
+            android:layout_marginBottom="84dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_union227" />
+
+        <TextView
+            android:id="@+id/text_kam"
+            android:layout_width="39dp"
+            android:layout_height="14dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="326dp"
+            android:layout_marginTop="134dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Kam,13"
+            android:textColor="#FFBFBCB9"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/image_rectangle3"
+            android:layout_width="69dp"
+            android:layout_height="45dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="117dp"
+            android:background="@drawable/image_rectangle217"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_stasiun_gubeng1"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="STASIUN GUBENG (..."
+        android:textColor="#FF000000"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/text_dot1"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="82.5dp"
+        android:layout_marginBottom="-0.5dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="."
+        android:textColor="#FFB8B6B6"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/text_dewasa1"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="1 Dewasa"
+        android:textColor="#FFB8B6B6"
+        android:textSize="10dp" />
+
+    <FrameLayout
+        android:id="@+id/container_group3"
+        android:layout_width="362dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="64dp"
+        android:layout_gravity="top|left">
+
+        <TextView
+            android:id="@+id/text_min_jun1"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Min, 09 Jun 2024 "
+            android:textColor="#FFB8B6B6"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/image_rectangle2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image_rectangle216"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_group1"
+        android:layout_width="57dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="126dp"
+        android:layout_gravity="top|left">
+
+        <ImageView
+            android:id="@+id/image_rectangle1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_rectangle215" />
+
+        <TextView
+            android:id="@+id/text_min"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Min, 09"
+            android:textColor="#FFDCBD5E"
+            android:textSize="10dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/image_rectangle4"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="117dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/image_rectangle218"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/text_sen"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Sen, 10"
+        android:textColor="#FFB8B6B6"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/image_rectangle5"
+        android:layout_width="77dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="117dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/image_rectangle219"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/text_sel"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Sel, 11"
+        android:textColor="#FFBFBCB9"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/image_rectangle6"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="117dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/image_rectangle220"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/text_rab"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Rab, 12"
+        android:textColor="#FFBFBCB9"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/image_rectangle7"
+        android:layout_width="84dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="117dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/image_rectangle221"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/image_vector"
+        android:layout_width="5dp"
+        android:layout_height="9dp"
+        android:layout_marginLeft="199dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="727dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/image_vector228" />
+
+    <FrameLayout
+        android:id="@+id/container_group4"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="51dp"
+        android:layout_gravity="top|left">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="left"
+            android:scaleType="centerInside"
+            android:src="@drawable/drawable_image206" />
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="KABUPATEN JO... "
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_pilih_kereta_berangkat"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Pilih Kereta Berangkat"
+        android:textColor="#FF000000"
+        android:textSize="15dp" />
+
+    <FrameLayout
+        android:id="@+id/container_group9"
+        android:layout_width="318dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="209dp"
+        android:layout_gravity="top|center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_rectangle9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image_rectangle223"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/text_lihat_kelas"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginBottom="17dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Lihat Kelas"
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/text_time_38"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="100.5dp"
+            android:layout_marginBottom="27.5dp"
+            android:layout_gravity="left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="21.38"
+            android:textColor="#FF000000"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/text_timej_17m"
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginBottom="51dp"
+            android:layout_gravity="left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="02j 17m"
+            android:textColor="#FFB8B6B6"
+            android:textSize="6dp" />
+
+        <TextView
+            android:id="@+id/text_location_jombang"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="56.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="JOMBANG (JG)"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/text_location_solo_balapan"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="left"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="9.6dp"
+            android:text="SOLO BALAPAN\n(SLO)"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/text_time_21"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="56.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="19:21"
+            android:textColor="#FF000000"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/image_path"
+            android:layout_width="9dp"
+            android:layout_height="10.93dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="281dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginBottom="27.07dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_path213" />
+
+        <TextView
+            android:id="@+id/text_pax"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_marginLeft="279dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="41.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="/pax"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/text_price_rp"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="38.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Rp 135.000"
+            android:textColor="#FF000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/text_price_info"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_marginLeft="197dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Harga tersedia mulai dari"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/text_dots"
+            android:layout_width="11dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="left"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="7.2dp"
+            android:text="............"
+            android:textColor="#FFB8B6B6"
+            android:textSize="6dp" />
+
+        <TextView
+            android:id="@+id/text_train_mutiara_selatan"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="MUTIARA SELATAN (85)"
+            android:textColor="#FFDCBD5E"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/image_train"
+            android:layout_width="14dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="55dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_train226" />
+
+        <ImageView
+            android:id="@+id/image_group"
+            android:layout_width="9dp"
+            android:layout_height="6dp"
+            android:layout_marginLeft="294dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="113dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_group212" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container_group10"
+        android:layout_width="318dp"
+        android:layout_height="437dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <ImageView
+            android:id="@+id/img_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:layout_gravity="top"
+            android:background="@drawable/img_rectangle233"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txt_lihat_kelas"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Lihat Kelas"
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txt_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="100.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="22.24"
+            android:textColor="#FF000000"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_duration1"
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="02j 11m"
+            android:textColor="#FFB8B6B6"
+            android:textSize="6dp" />
+
+        <TextView
+            android:id="@+id/txt_departure1"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="56.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="JOMBANG (JG)"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_destination1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="101dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="9.6dp"
+            android:text="SOLO BALAPAN\n(SLO)"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_arrival1"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="56.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="19:21"
+            android:textColor="#FF000000"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/img_path1"
+            android:layout_width="9dp"
+            android:layout_height="10.93dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="281dp"
+            android:layout_marginTop="101dp"
+            android:layout_marginBottom="325.07dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_path1230" />
+
+        <TextView
+            android:id="@+id/txt_pax1"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_marginLeft="279dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="41.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="/pax"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_price1"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginTop="38.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Rp 380.000"
+            android:textColor="#FF000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/txt_availability1"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_marginLeft="197dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="25.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Harga tersedia mulai dari"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_placeholder1"
+            android:layout_width="11dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="74dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="7.2dp"
+            android:text="............"
+            android:textColor="#FFB8B6B6"
+            android:textSize="6dp" />
+
+        <TextView
+            android:id="@+id/txt_train1"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="BIMA (59)"
+            android:textColor="#FFDCBD5E"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/img_train1"
+            android:layout_width="14dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="55dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_train1236" />
+
+        <ImageView
+            android:id="@+id/img_rectangle2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="149dp"
+            android:layout_marginBottom="149dp"
+            android:background="@drawable/img_rectangle234"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txt_lihat_kelas2"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="257dp"
+            android:layout_marginBottom="166dp"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Lihat Kelas"
+            android:textColor="#FF000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txt_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="249.5dp"
+            android:layout_marginBottom="176.5dp"
+            android:layout_gravity="left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="22:24"
+            android:textColor="#FF000000"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_duration2"
+            android:layout_width="wrap_content"
+            android:layout_height="9dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="228dp"
+            android:layout_marginBottom="200dp"
+            android:layout_gravity="left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="02j 11m"
+            android:textColor="#FFB8B6B6"
+            android:textSize="6dp" />
+
+        <TextView
+            android:id="@+id/txt_departure2"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="205.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="JOMBANG (JG)"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_destination2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="167dp"
+            android:layout_gravity="left"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="9.6dp"
+            android:text="SOLO BALAPAN\n(SLO)"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_arrival2"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="205.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="20:13"
+            android:textColor="#FF000000"
+            android:textSize="8dp" />
+
+        <ImageView
+            android:id="@+id/img_path2"
+            android:layout_width="9dp"
+            android:layout_height="10.93dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="281dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="176.07dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_path2231" />
+
+        <TextView
+            android:id="@+id/txt_pax2"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_marginLeft="289dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="190.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="/pax"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_price2"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginTop="187.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Rp 1.230.000"
+            android:textColor="#FF000000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/txt_availability2"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_marginLeft="197dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="174.5dp"
+            android:layout_marginBottom="-0.5dp"
+            android:layout_gravity="top"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Harga tersedia mulai dari"
+            android:textColor="#FFB8B6B6"
+            android:textSize="8dp" />
+
+        <TextView
+            android:id="@+id/txt_placeholder2"
+            android:layout_width="11dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="223dp"
+            android:layout_marginBottom="189dp"
+            android:layout_gravity="left"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="7.2dp"
+            android:text="............"
+            android:textColor="#FFB8B6B6"
+            android:textSize="6dp" />
+
+        <TextView
+            android:id="@+id/txt_train2"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_gravity="top|left"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="BIMA COMPARTMENT (59CS)"
+            android:textColor="#FFDCBD5E"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/img_train2"
+            android:layout_width="14dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="204dp"
+            android:layout_gravity="top|left"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_train2237" />
+
+        <FrameLayout
+            android:id="@+id/container_group21"
+            android:layout_width="match_parent"
+            android:layout_height="139dp"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/img_rectangle3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_rectangle3235"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/txt_lihat_kelas3"
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_marginLeft="232dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginBottom="17dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Lihat Kelas"
+                android:textColor="#FF000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/txt_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="100.5dp"
+                android:layout_marginBottom="27.5dp"
+                android:layout_gravity="left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="21.38"
+                android:textColor="#FF000000"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/txt_duration3"
+                android:layout_width="wrap_content"
+                android:layout_height="9dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="79dp"
+                android:layout_marginBottom="51dp"
+                android:layout_gravity="left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="02j 17m"
+                android:textColor="#FFB8B6B6"
+                android:textSize="6dp" />
+
+            <TextView
+                android:id="@+id/txt_departure3"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="56.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="JOMBANG (JG)"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/txt_destination3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="73dp"
+                android:layout_marginTop="101dp"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="9.6dp"
+                android:text="SOLO BALAPAN\n(SLO)"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/txt_arrival3"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="56.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="19:21"
+                android:textColor="#FF000000"
+                android:textSize="8dp" />
+
+            <ImageView
+                android:id="@+id/img_path3"
+                android:layout_width="9dp"
+                android:layout_height="10.93dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="281dp"
+                android:layout_marginTop="101dp"
+                android:layout_marginBottom="27.07dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_path3232" />
+
+            <TextView
+                android:id="@+id/txt_pax3"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginLeft="279dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="41.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="/pax"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/txt_price3"
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginTop="38.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Rp 780.000"
+                android:textColor="#FF000000"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txt_availability3"
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:layout_marginLeft="197dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:layout_gravity="top"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Harga tersedia mulai dari"
+                android:textColor="#FFB8B6B6"
+                android:textSize="8dp" />
+
+            <TextView
+                android:id="@+id/txt_placeholder3"
+                android:layout_width="11dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="74dp"
+                android:layout_marginBottom="40dp"
+                android:layout_gravity="left"
+                android:gravity="left|top"
+                android:includeFontPadding="false"
+                android:lineHeight="7.2dp"
+                android:text="............"
+                android:textColor="#FFB8B6B6"
+                android:textSize="6dp" />
+
+            <TextView
+                android:id="@+id/txt_train3"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_gravity="top|left"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="TURANGGA (88)"
+                android:textColor="#FFDCBD5E"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/img_train3"
+                android:layout_width="14dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="top|left"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_train3238" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/container_group5"
+        android:layout_width="9dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="319dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="471dp"
+        android:layout_marginBottom="323dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/container_group201" />
+
+    <ImageView
+        android:id="@+id/container_group6"
+        android:layout_width="9dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="319dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginBottom="174dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/container_group202" />
+
+    <ImageView
+        android:id="@+id/container_group7"
+        android:layout_width="9dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="319dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="768dp"
+        android:layout_marginBottom="26dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/container_group203" />
+
+    <ImageView
+        android:id="@+id/image_rectangle8"
+        android:layout_width="88dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="744dp"
+        android:layout_gravity="top|left"
+        android:background="@drawable/image_rectangle222"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/container_group8"
+        android:layout_width="15dp"
+        android:layout_height="7dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="757dp"
+        android:layout_gravity="top|left"
+        android:scaleType="centerInside"
+        android:src="@drawable/container_group204" />
+
+    <TextView
+        android:id="@+id/text_urutkan"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="755.5dp"
+        android:layout_marginBottom="-0.5dp"
+        android:layout_gravity="top|left"
+        android:gravity="left|center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Urutkan"
+        android:textColor="#FF000000"
+        android:textSize="8dp" />
+</FrameLayout>
