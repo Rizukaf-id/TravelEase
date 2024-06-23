@@ -7,8 +7,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import com.google.firebase.Firebase
+import com.google.firebase.FirebaseApp
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
+import com.google.firebase.auth.ktx.auth
 
 class Profile : Fragment() {
+
+    private lateinit var auth: FirebaseAuth
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -18,12 +25,16 @@ class Profile : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        auth = com.google.firebase.ktx.Firebase.auth
+
+        auth = FirebaseAuth.getInstance()
 
         view.findViewById<LinearLayout>(R.id.daftarPenumpangButton).setOnClickListener {
             navigateToPenumpangTersimpan()
         }
         // Set OnClickListener for logout
         view.findViewById<LinearLayout>(R.id.logoutButton).setOnClickListener {
+            Firebase.auth.signOut()
             logoutUser()
         }
     }
