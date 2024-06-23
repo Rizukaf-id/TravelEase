@@ -107,6 +107,7 @@
         android:orientation="horizontal">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/decreaseButton"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -116,6 +117,7 @@
             android:textSize="16dp" />
 
         <EditText
+            android:id="@+id/stockEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -123,6 +125,7 @@
             android:text="100" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/increaseButton"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -132,12 +135,14 @@
             android:textSize="16dp" />
 
         <Button
+            android:id="@+id/confirmButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/button_rounded_corner"
+            android:backgroundTint="@color/primary_color"
             android:enabled="false"
             android:text="KONFIRMASI"
             android:textColor="@color/white"
