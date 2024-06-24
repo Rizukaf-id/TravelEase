@@ -15,11 +15,6 @@ import java.util.Locale
 
 class PemesananKeretaLokal : AppCompatActivity() {
     private lateinit var binding: ActivityPemesananKeretaLokalBinding
-
-    public var departure: Boolean = false
-    public var arrival: Boolean = false
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPemesananKeretaLokalBinding.inflate(layoutInflater)
