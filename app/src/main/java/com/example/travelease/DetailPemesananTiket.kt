@@ -2,6 +2,7 @@ package com.example.travelease
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -50,6 +51,13 @@ class DetailPemesananTiket : AppCompatActivity() {
 
         binding.btnBayar.setOnClickListener {
             val intent = Intent(this, MetodePembayaran::class.java)
+            intent.putExtra("armada_name", binding.kereta.text.toString())
+            intent.putExtra("price", binding.harga.text.toString())
+            intent.putExtra("departure_time", binding.departureTime.text.toString())
+            intent.putExtra("arrival_time", binding.arrivalTime.text.toString())
+            intent.putExtra("departure_location", binding.departureStation.text.toString())
+            intent.putExtra("arrival_location", binding.arrivalStation.text.toString())
+            Log.d("DetailPemesananTiket", "Data yang dikirim: ${binding.kereta.text.toString()}, ${binding.harga.text.toString()}, ${binding.departureTime.text.toString()}, ${binding.arrivalTime.text.toString()}, ${binding.departureStation.text.toString()}, ${binding.arrivalStation.text.toString()}")
             startActivity(intent)
         }
 

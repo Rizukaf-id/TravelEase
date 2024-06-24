@@ -71,6 +71,7 @@
         android:padding="16dp">
 
         <LinearLayout
+            android:id="@+id/ticketContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -78,10 +79,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="8dp" />
-
-            <include
-                layout="@layout/ticket_item"
-                android:id="@+id/local_train_ticket" />
 
         </LinearLayout>
     </ScrollView>

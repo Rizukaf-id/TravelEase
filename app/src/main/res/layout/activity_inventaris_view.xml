@@ -57,13 +57,14 @@
                 android:gravity="start"> <!-- Centering content inside the LinearLayout -->
 
                 <TextView
+                    android:id="@+id/tiket_terjual"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="00"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
                     android:textColor="@android:color/black"
-                    android:gravity="center"/> <!-- Centering text inside the TextView -->
+                    android:textSize="24sp"
+                    android:textStyle="bold" /> <!-- Centering text inside the TextView -->
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -83,6 +84,7 @@
                 android:gravity="start"> <!-- Centering content inside the LinearLayout -->
 
                 <TextView
+                    android:id="@+id/total_sales"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Rp 00"
@@ -102,15 +104,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="347dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:background="@drawable/button_rounded_corner"
-            android:text="Lihat Detail Penjualan" />
     </LinearLayout>
 
     <!-- Inventory List -->
@@ -120,23 +113,10 @@
         android:layout_height="0dp"
         android:layout_above="@id/navbar"
         android:layout_below="@id/total_sales_card"
-        android:layout_weight="1"
         android:layout_marginTop="30dp"
-        android:elevation="4dp">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="16dp"
-            android:orientation="vertical">
-
-            <!-- Item Card -->
-            <include layout="@layout/item_inventaris" />
-
-        </LinearLayout>
-    </ScrollView>
+        android:layout_weight="1"
+        android:elevation="4dp"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:id="@+id/navbar"
@@ -151,19 +131,21 @@
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:text="Home"
             android:background="@color/white"
-            android:textColor="@color/primary_color"
             android:drawableTop="@drawable/baseline_home_24"
-            android:drawableTint="@color/primary_color"/>
+            android:drawableTint="@color/primary_color"
+            android:text="Home"
+            android:textColor="#827717" />
+
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:text="Log Out"
             android:background="@color/white"
-            android:textColor="@color/error_color"
-            android:drawableTop="@drawable/baseline_logout_24" />
+            android:drawableTop="@drawable/baseline_logout_24"
+            android:text="Log Out"
+            android:textColor="#D32F2F" />
 
     </LinearLayout>
 

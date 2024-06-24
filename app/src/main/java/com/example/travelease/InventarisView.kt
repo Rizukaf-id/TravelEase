@@ -1,8 +1,10 @@
 package com.example.travelease
 
 import android.os.Bundle
+import android.service.controls.ControlsProviderService.TAG
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +13,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.travelease.databinding.ActivityInventarisViewBinding
+import com.google.firebase.firestore.FirebaseFirestore
 
 class InventarisView : AppCompatActivity() {
     private var _binding: ActivityInventarisViewBinding? = null
@@ -21,35 +24,30 @@ class InventarisView : AppCompatActivity() {
         _binding = ActivityInventarisViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Find the buttons and EditText
-        val decreaseButton: AppCompatButton = findViewById(R.id.decreaseButton)
-        val increaseButton: AppCompatButton = findViewById(R.id.increaseButton)
-        val stockEditText: EditText = findViewById(R.id.stockEditText)
-        val confirmButton: Button = findViewById(R.id.confirmButton)
 
-        val originalStock = stockEditText.text.toString().toInt()
+        val db = FirebaseFirestore.getInstance()
+        val salesRef = db.collection("sales")
 
-        decreaseButton.setOnClickListener {
-            val currentStock = stockEditText.text.toString().toInt()
-            if (currentStock > 0) {
-                stockEditText.setText((currentStock - 1).toString())
+        var totalSales = 0
+        var totalPrice = 0.0
+
+        salesRef.get()
+            .addOnSuccessListener { documents ->
+                for (document in documents) {
+                    val price = document.getString("ticket_price")?.toDouble() ?: 0.0
+                    totalPrice += price
+                    totalSales++
+                }
+
+                binding.tiketTerjual.text = totalSales.toString()
+                binding.totalSales.text = totalPrice.toString()
             }
-        }
-
-        increaseButton.setOnClickListener {
-            val currentStock = stockEditText.text.toString().toInt()
-            stockEditText.setText((currentStock + 1).toString())
-        }
-
-        stockEditText.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                val currentStock = s.toString().toIntOrNull() ?: 0
-                confirmButton.isEnabled = currentStock != originalStock
+            .addOnFailureListener { exception ->
+                Log.w(TAG, "Error getting documents: ", exception)
             }
 
-            override fun afterTextChanged(s: Editable?) {}
-        })
+        binding.logout.setOnClickListener(){
+            finish()
+        }
     }
 }
