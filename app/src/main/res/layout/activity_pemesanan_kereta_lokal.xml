@@ -174,66 +174,14 @@
         android:textSize="15dp"
         tools:ignore="TextSizeCheck" />
 
-    <ImageView
-        android:id="@+id/container_frame5"
-        android:layout_width="230dp"
-        android:layout_height="62dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="358dp"
-        android:layout_gravity="top|left"
-        android:scaleType="centerInside"
-        android:src="@drawable/container_frame103" />
-
     <FrameLayout
-        android:id="@+id/container_frame2"
+        android:id="@+id/arrival"
         android:layout_width="230dp"
         android:layout_height="62dp"
         android:layout_marginLeft="90dp"
         android:layout_marginTop="275dp"
         android:layout_gravity="top|left"
         android:background="@drawable/container_frame101">
-
-        <LinearLayout
-            android:id="@+id/container_frame3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="141dp"
-            android:layout_marginBottom="-0.5dp"
-            android:layout_gravity="top|left"
-            android:clipToPadding="false"
-            android:gravity="left|top"
-            android:orientation="horizontal"
-            android:paddingBottom="0.5dp"
-            android:paddingTop="4.5dp">
-
-            <TextView
-                android:id="@+id/text_orang1"
-                android:layout_width="wrap_content"
-                android:layout_height="17dp"
-                android:layout_marginBottom="-0.5dp"
-                android:gravity="left|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="3 Orang"
-                android:textColor="#FF000000"
-                android:textSize="13dp" />
-
-            <TextView
-                android:id="@+id/text_rp1"
-                android:layout_width="wrap_content"
-                android:layout_height="17dp"
-                android:layout_marginLeft="164dp"
-                android:layout_marginBottom="-0.5dp"
-                android:gravity="right|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="Rp 000000;"
-                android:textColor="#FFDCBD5E"
-                android:textSize="13dp" />
-        </LinearLayout>
 
         <TextView
             android:id="@+id/text_ke"
@@ -280,8 +228,18 @@
             android:src="@drawable/image_train_line" />
     </FrameLayout>
 
+    <DatePicker
+        android:id="@+id/container_frame5"
+        android:layout_width="230dp"
+        android:layout_height="62dp"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="358dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/container_frame103" />
+
     <FrameLayout
-        android:id="@+id/container_frame7"
+        android:id="@+id/departure"
         android:layout_width="230dp"
         android:layout_height="62dp"
         android:layout_marginLeft="90dp"
@@ -301,35 +259,7 @@
             android:gravity="left|top"
             android:orientation="horizontal"
             android:paddingBottom="0.5dp"
-            android:paddingTop="4.5dp">
-
-            <TextView
-                android:id="@+id/text_orang3"
-                android:layout_width="wrap_content"
-                android:layout_height="17dp"
-                android:layout_marginBottom="-0.5dp"
-                android:gravity="left|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="3 Orang"
-                android:textColor="#FF000000"
-                android:textSize="13dp" />
-
-            <TextView
-                android:id="@+id/text_rp3"
-                android:layout_width="wrap_content"
-                android:layout_height="17dp"
-                android:layout_marginLeft="164dp"
-                android:layout_marginBottom="-0.5dp"
-                android:gravity="right|center_vertical"
-                android:includeFontPadding="false"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:text="Rp 000000;"
-                android:textColor="#FFDCBD5E"
-                android:textSize="13dp" />
-        </LinearLayout>
+            android:paddingTop="4.5dp"/>
 
         <TextView
             android:id="@+id/text_dari"
@@ -351,7 +281,7 @@
         <TextView
             android:id="@+id/text_dari1"
             android:layout_width="wrap_content"
-            android:layout_height="14dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="top|left"
             android:layout_marginLeft="52dp"
             android:layout_marginTop="27dp"
@@ -386,26 +316,6 @@
         android:scaleType="centerInside" />
 
     <ImageView
-        android:id="@+id/image_rectangle2"
-        android:layout_width="19dp"
-        android:layout_height="6dp"
-        android:layout_marginLeft="258dp"
-        android:layout_marginTop="393dp"
-        android:layout_gravity="top|left"
-        android:background="@drawable/image_rectangle110"
-        android:scaleType="centerInside" />
-
-    <ImageView
-        android:id="@+id/image_ellipse"
-        android:layout_width="8dp"
-        android:layout_height="8dp"
-        android:layout_marginLeft="259dp"
-        android:layout_marginTop="392dp"
-        android:layout_gravity="top|left"
-        android:scaleType="centerInside"
-        android:src="@drawable/image_ellipse107" />
-
-    <ImageView
         android:id="@+id/image_frame"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -415,12 +325,4 @@
         android:scaleType="centerInside"
         android:src="@drawable/image_frame" />
 
-    <ImageView
-        android:id="@+id/image_toggle_left"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        android:layout_marginLeft="264dp"
-        android:layout_marginTop="385dp"
-        android:layout_gravity="top|left"
-        android:scaleType="centerInside" />
 </FrameLayout>
