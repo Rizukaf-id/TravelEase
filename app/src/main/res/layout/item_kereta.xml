@@ -44,6 +44,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
     <TextView
+        android:id="@+id/jam_berangkat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00"
@@ -51,6 +52,7 @@
         android:textColor="@android:color/black"
         android:textSize="16sp" />
     <TextView
+        android:id="@+id/stasiun_berangkat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lokasi"
@@ -65,6 +67,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="4dp">
     <TextView
+        android:id="@+id/jam_sampai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00"
@@ -72,6 +75,7 @@
         android:textColor="@android:color/black"
         android:textSize="16sp" />
     <TextView
+        android:id="@+id/stasiun_sampai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lokasi"
