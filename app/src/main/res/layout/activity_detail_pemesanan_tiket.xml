@@ -63,6 +63,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="4dp">
                 <TextView
+                    android:id="@+id/departure_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="00:00"
@@ -70,6 +71,7 @@
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/departure_station"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lokasi"
@@ -84,6 +86,7 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="4dp">
                 <TextView
+                    android:id="@+id/arrival_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="00:00"
@@ -91,6 +94,7 @@
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
                 <TextView
+                    android:id="@+id/arrival_station"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lokasi"

@@ -51,6 +51,9 @@
         <activity
             android:name=".PemesananKeretaLokal"
             android:exported="false"/>
+        <activity
+            android:name=".PilihKereta"
+            android:exported="false"/>
 
     </application>
 

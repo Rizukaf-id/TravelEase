@@ -9,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.travelease.databinding.ActivityDetailPemesananTiketBinding
 import com.example.travelease.databinding.ActivityPenumpangTersimpanBinding
 
+
 class DetailPemesananTiket : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailPemesananTiketBinding
@@ -17,6 +18,22 @@ class DetailPemesananTiket : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailPemesananTiketBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val intent = intent
+        val armadaName = intent.getStringExtra("armada_name")
+        val price = intent.getStringExtra("price")
+        val departureTime = intent.getStringExtra("departure_time")
+        val arrivalTime = intent.getStringExtra("arrival_time")
+        val departureLocation = intent.getStringExtra("departure_location")
+        val arrivalLocation = intent.getStringExtra("arrival_location")
+
+        binding.kereta.text = armadaName
+        binding.harga.text = price
+        binding.departureTime.text = departureTime
+        binding.arrivalTime.text = arrivalTime
+        binding.departureStation.text = departureLocation
+        binding.arrivalStation.text = arrivalLocation
+
 
         binding.linearLayout.setOnClickListener {
             val intent = Intent(this, DetailPenumpang::class.java)
@@ -31,6 +48,11 @@ class DetailPemesananTiket : AppCompatActivity() {
             onBackPressed()
         }
 
+        binding.btnBayar.setOnClickListener {
+            val intent = Intent(this, MetodePembayaran::class.java)
+            startActivity(intent)
+        }
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -43,4 +65,6 @@ class DetailPemesananTiket : AppCompatActivity() {
         startActivity(intent)
         super.onBackPressed()
     }
+
+
 }
