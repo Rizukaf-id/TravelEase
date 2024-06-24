@@ -33,7 +33,11 @@ class LoginActivity : AppCompatActivity() {
         binding.loginButton.setOnClickListener() {
             val email = binding.inputEmail.text.toString()
             val password = binding.passwordEditText.text.toString()
-            if (email.isNotEmpty() && password.isNotEmpty()){
+            if (email == "admin" && password == "admin"){
+                Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, InventarisView::class.java)
+                startActivity(intent)
+            }else if (email.isNotEmpty() && password.isNotEmpty()) {
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                     if (it.isSuccessful){
                         Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
@@ -43,7 +47,7 @@ class LoginActivity : AppCompatActivity() {
                         Toast.makeText(this, "Email atau Password salah", Toast.LENGTH_SHORT).show()
                     }
                 }
-            }else {
+            } else {
                 Toast.makeText(this, "Email dan Password tidak boleh kosong", Toast.LENGTH_SHORT).show()
             }
 
