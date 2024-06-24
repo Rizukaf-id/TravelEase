@@ -45,6 +45,13 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".PencarianStasiun"
+            android:exported="false" />
+        <activity
+            android:name=".PemesananKeretaLokal"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

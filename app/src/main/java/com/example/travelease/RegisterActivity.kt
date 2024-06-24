@@ -65,7 +65,7 @@ class RegisterActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.daftar.setOnClickListener {
-            val username = binding.nama.text.toString()
+            val username = binding.inputName.text.toString()
             val email = binding.inputEmail.text.toString()
             val password = binding.inputConfirmpassword.text.toString()
             val confirmPassword = binding.inputConfirmpassword.text.toString()
