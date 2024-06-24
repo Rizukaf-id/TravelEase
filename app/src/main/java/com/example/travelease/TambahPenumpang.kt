@@ -73,8 +73,7 @@ class TambahPenumpang : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("navigateToProfile", true)
+        val intent = Intent(this, DetailPemesananTiket::class.java)
         startActivity(intent)
         super.onBackPressed()
     }
