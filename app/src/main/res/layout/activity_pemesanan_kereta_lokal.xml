@@ -161,48 +161,17 @@
             tools:ignore="TextSizeCheck" />
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/image_rectangle1"
-        android:layout_width="238dp"
-        android:layout_height="39dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="521dp"
-        android:layout_gravity="top|left"
-        android:background="@drawable/image_rectangle109"
-        android:scaleType="centerInside" />
-
-    <TextView
-        android:id="@+id/text_penumpang_bayi"
-        android:layout_width="wrap_content"
-        android:layout_height="9dp"
+    <Button
+        android:id="@+id/cari_kereta"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="top|left"
         android:layout_marginLeft="90dp"
-        android:layout_marginTop="497dp"
-        android:layout_marginBottom="-1dp"
-        android:gravity="left|center_vertical"
-        android:includeFontPadding="false"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:text="Penumpang bayi tidak medapatkan kursi sendiri"
-        android:textColor="#FF000000"
-        android:textSize="6dp"
-        tools:ignore="TextSizeCheck" />
-
-    <TextView
-        android:id="@+id/text_cari_tiket_antar_kota"
-        android:layout_width="wrap_content"
-        android:layout_height="14dp"
-        android:layout_gravity="top|left"
-        android:layout_marginLeft="123dp"
-        android:layout_marginTop="534dp"
-        android:layout_marginBottom="-1dp"
-        android:gravity="left|center_vertical"
-        android:includeFontPadding="false"
-        android:maxLines="1"
-        android:singleLine="true"
-        android:text="CARI  TIKET ANTAR KOTA"
-        android:textColor="#FFFFFFFF"
-        android:textSize="10dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/button_rounded_corner"
+        android:padding="16dp"
+        android:text="Cari Kereta"
+        android:textSize="15dp"
         tools:ignore="TextSizeCheck" />
 
     <ImageView

@@ -1,5 +1,6 @@
 package com.example.travelease
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,11 +25,6 @@ class Home : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-
-//        val keretaButton: Button = view.findViewById(R.id.kereta_button)
-//        keretaButton.setOnClickListener {
-//            findNavController().navigate(R.id.action_homeFragment_to_pemesananKeretaLokal)
-//        }
         return binding.root
     }
 
@@ -37,6 +33,11 @@ class Home : Fragment() {
 
         setupButton(binding.keretaButton.root, R.drawable.ic_train, "Kereta")
         setupButton(binding.pesawatButton.root, R.drawable.ic_plane, "Pesawat")
+
+        binding.keretaButton.root.setOnClickListener {
+            val intent = Intent(requireContext(), PemesananKeretaLokal::class.java)
+            startActivity(intent)
+        }
 
         setupTujuanPopuler()
     }
