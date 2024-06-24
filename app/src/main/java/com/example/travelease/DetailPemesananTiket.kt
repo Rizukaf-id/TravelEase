@@ -34,6 +34,7 @@ class DetailPemesananTiket : AppCompatActivity() {
         binding.arrivalTime.text = arrivalTime
         binding.departureStation.text = departureLocation
         binding.arrivalStation.text = arrivalLocation
+        binding.totalPembelian.text = price
 
 
         binding.linearLayout.setOnClickListener {
